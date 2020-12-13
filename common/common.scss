@@ -5,7 +5,8 @@ $cta-text-color: #FFFFFF;
     display: flex;
     clear: both;
     max-width: calc(#{$topic-body-width} + #{$topic-avatar-width} + (#{$topic-body-width-padding} * 2));
-    background: rgb(7,99,253); background: linear-gradient(135deg, rgba(7,99,253,1) 30%, rgba(1,67,178,1) 90%);
+    background: rgb(20,126,251);
+    background: linear-gradient(90deg, rgba(20,126,251,1) 0%, rgba(1,67,178,1) 100%);
     box-sizing: border-box;
     border-radius: 4px;
     img {
