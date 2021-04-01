@@ -2,63 +2,63 @@ $cta-background-color: #000000;
 $cta-text-color: #FFFFFF;
 
 .banner-ad {
+  display: flex;
+  clear: both;
+  max-width: calc(#{$topic-body-width} + #{$topic-avatar-width} + (#{$topic-body-width-padding} * 2));
+  background: rgb(20,126,251);
+  background: linear-gradient(90deg, rgba(20,126,251,1) 0%, rgba(1,67,178,1) 100%);
+  box-sizing: border-box;
+  border-radius: 4px;
+  img {
+    height: 90px;
+    padding: 5px 0px 5px 0px;
+    &.desktop {
+      display: block;
+    }
+    &.mobile {
+      display: none;
+    }
+  }
+  .container {
     display: flex;
-    clear: both;
-    max-width: calc(#{$topic-body-width} + #{$topic-avatar-width} + (#{$topic-body-width-padding} * 2));
-    background: rgb(20,126,251);
-    background: linear-gradient(90deg, rgba(20,126,251,1) 0%, rgba(1,67,178,1) 100%);
-    box-sizing: border-box;
-    border-radius: 4px;
-    img {
-        height: 90px;
-        padding: 5px 0px 5px 0px;
-        &.desktop {
-            display: block;
-        }
-        &.mobile {
-            display: none;
-        }
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    p {
+      margin: 0;
+      &.big {
+        font-size: 24px;
+        line-height: normal;
+        padding-bottom: 5px;
+        color: #ffffff;
+        font-weight: lighter;
+        border-bottom: 2px solid #ffffff;
+      }
     }
-    .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        p {
-            margin: 0;
-            &.big {
-                font-size: 24px;
-                line-height: normal;
-                padding-bottom: 5px;
-                color: #ffffff;
-                font-weight: lighter;
-                border-bottom: 2px solid #ffffff;
-            }
-        }
-        .cta {
-            color: $cta-text-color;
-            background-color: $cta-background-color;
-            &:hover {
-                background-color: darken($cta-background-color, 20%);
-            }
-        }
+    .cta {
+      color: $cta-text-color;
+      background-color: $cta-background-color;
+      &:hover {
+        background-color: darken($cta-background-color, 20%);
+      }
     }
+  }
 }
 
 @media only screen and (max-width: 672px) {
-    .banner-ad {
-        img.desktop, p {
-            display: none;
-        }
-        img.mobile {
-            display: block;
-        }
-        .container {
-            justify-content: center;
-            .cta {
-                margin: 0 5px;
-                font-size: 16px;
-            }
-        }
+  .banner-ad {
+    img.desktop, p {
+      display: none;
     }
+    img.mobile {
+      display: block;
+    }
+    .container {
+      justify-content: center;
+      .cta {
+        margin: 0 5px;
+        font-size: 16px;
+      }
+    }
+  }
 }
