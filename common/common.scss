@@ -1,7 +1,5 @@
 $cta-background-color: #000000;
 $cta-text-color: #FFFFFF;
-$avatar-post-width: calc(690px + 45px + 2em + 24px + 22px);
-
 
 .house-topic-above-post-stream {
   margin: 0 0 2em 0;
@@ -13,7 +11,6 @@ $avatar-post-width: calc(690px + 45px + 2em + 24px + 22px);
 .banner-ad {
   display: flex;
   clear: both;
-  max-width: $avatar-post-width;
   background: rgb(20,126,251);
   background: linear-gradient(90deg, rgba(20,126,251,1) 0%, rgba(1,67,178,1) 100%);
   box-sizing: border-box;
