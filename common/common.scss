@@ -18,6 +18,7 @@ $cta-text-color: #FFFFFF;
   img {
     height: 90px;
     padding: 5px 0px 5px 0px;
+    overflow: hidden;
     &.desktop {
       display: block;
     }
