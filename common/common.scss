@@ -1,8 +1,13 @@
 $cta-background-color: #000000;
 $cta-text-color: #FFFFFF;
+$br-auto: Max(0px, Min(1em, calc((100vw - 100%) * 9999))) / 1em;
+
 
 .house-topic-above-post-stream {
-  margin: 0 0 2em 0;
+  margin: 0 0 2em 0;]
+  @media screen and (max-width: 600px) {
+    margin: -18px 0 20px 0;
+  }
 }
 .house-topic-above-suggested {
   margin: 2em 0 0 0;
@@ -14,7 +19,7 @@ $cta-text-color: #FFFFFF;
   background: rgb(20,126,251);
   background: linear-gradient(90deg, rgba(20,126,251,1) 0%, rgba(1,67,178,1) 100%);
   box-sizing: border-box;
-  border-radius: 1em;
+  border-radius: #{$br-auto};
   img {
     height: 90px;
     padding: 5px 0px 5px 0px;
