@@ -1,6 +1,11 @@
 .house-creative {
   margin: 20px auto;
-  @media screen and (max-width: 600px) {
-    margin: -18px 0 20px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .house-topic-above-post-stream {
+    .house-creative {
+      margin: -18px auto 20px auto;
+    }
   }
 }
