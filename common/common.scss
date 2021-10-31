@@ -4,10 +4,7 @@ $br-auto: Max(0px, Min(1em, calc((100vw - 100%) * 9999))) / 1em;
 
 
 .house-topic-above-post-stream {
-  margin: 0 0 2em 0;]
-  @media screen and (max-width: 600px) {
-    margin: -18px 0 20px 0;
-  }
+  margin: 0 0 2em 0;
 }
 .house-topic-above-suggested {
   margin: 2em 0 0 0;
