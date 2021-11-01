@@ -16,7 +16,7 @@ $br-auto: Max(0px, Min(1em, calc((100vw - 100%) * 9999))) / 1em;
   background: rgb(20,126,251);
   background: linear-gradient(90deg, rgba(20,126,251,1) 0%, rgba(1,67,178,1) 100%);
   box-sizing: border-box;
-  border-radius: #{$br-auto};
+  border-radius: $br-auto;
   img {
     height: 90px;
     padding: 5px 0px 5px 0px;
